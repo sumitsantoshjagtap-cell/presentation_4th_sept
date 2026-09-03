@@ -274,7 +274,7 @@ body.light #deck{
 }
 /* Decorative large section numbers (inline colour overrides need !important) */
 body.light #deck .secnum{
-  color: rgba(50,80,120,.22) !important;
+  color: #3B0A6E !important;
 }
 /* Headings — explicit override so h1/h2 are never grey in light mode */
 body.light #deck h1,
@@ -295,7 +295,7 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 #themetog:hover{border-color:var(--teal);background:var(--teal-d);color:var(--teal)}
 </style>
 </head>
-<body>
+<body class = "light">
 
 <div id="bar"></div>
 <div id="sec">Overview</div>
@@ -355,23 +355,23 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 2. Hook -->
 <div class="slide larger" data-sec="What is Research?">
-  <div class="tag" style="font-size:20px;margin-bottom:16px;">Opening</div>
-  <h2 style="font-size:clamp(45px,5.5vw,72px);margin-bottom:20px;">When you last searched Google &mdash; were you doing research?</h2>
-  <p class="lead" style="font-size:clamp(24px,2.8vw,32px);margin-bottom:24px;">Most people say yes. The technically accurate answer: <span class="ht">probably not.</span></p>
-  <div class="g2" style="gap:20px;">
-    <div class="card" style="padding:24px 28px;">
-      <div class="lbl r"style="font-size:18px;margin-bottom:10px;">What we do instinctively</div>
-      <h4 style="font-size:28px;margin-bottom:10px;">Information retrieval</h4>
-      <p style="font-size:22px;line-height:1.6;">Finding existing answers to an immediate question. Fast, convenient, built for consumption &mdash; not for generating or verifying new knowledge.</p>
+  <div class="tag" style="font-size:22px; margin-bottom:16px;">Opening</div>
+  <h2 style="font-size:clamp(50px,6vw,80px); margin-bottom:20px;">When you last searched Google &mdash; were you doing research?</h2>
+  <p class="lead" style="font-size:clamp(26px,3vw,36px); margin-bottom:24px;">Most people say yes. The technically accurate answer: <span class="ht">probably not.</span></p>
+  <div class="g2" style="gap:24px;">
+    <div class="card" style="padding:28px 32px; min-height:280px;">
+      <div class="lbl r" style="font-size:20px; margin-bottom:10px;">What we do instinctively</div>
+      <h4 style="font-size:30px; margin-bottom:12px;">Information retrieval</h4>
+      <p style="font-size:24px; line-height:1.5;">Finding existing answers to an immediate question. Fast, convenient, built for consumption &mdash; not for generating or verifying new knowledge.</p>
     </div>
-    <div class="card"style="padding:24px 28px;">
-      <div class="lbl"style="font-size:18px;margin-bottom:10px;">What research actually is</div>
-      <h4 style="font-size:28px;margin-bottom:10px;">Systematic knowledge generation</h4>
-      <p style="font-size:22px;line-height:1.6;">A structured process of inquiry designed to answer questions that don&rsquo;t already have clear, verified answers &mdash; and to produce conclusions others can scrutinize and build upon.</p>
+    <div class="card" style="padding:28px 32px; min-height:280px;">
+      <div class="lbl" style="font-size:20px; margin-bottom:10px;">What research actually is</div>
+      <h4 style="font-size:30px; margin-bottom:12px;">Systematic knowledge generation</h4>
+      <p style="font-size:24px; line-height:1.5;">A structured process of inquiry designed to answer questions that don&rsquo;t already have clear, verified answers &mdash; and to produce conclusions others can scrutinize and build upon.</p>
     </div>
   </div>
-  <div class="call" style="margin-top:20px;padding:18px 22px;">
-    <p style="font-size:24px;line-height:1.5;">The distinction isn&rsquo;t about effort or intelligence. It is about <strong>method, accountability, and intent.</strong> That is what we unpack today.</p>
+  <div class="call" style="margin-top:24px; padding:20px 24px;">
+    <p style="font-size:26px; line-height:1.4;">The distinction isn&rsquo;t about effort or intelligence. It is about <strong>method, accountability, and intent.</strong> That is what we unpack today.</p>
   </div>
 </div>
 
@@ -440,24 +440,45 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 7. Research Process Map -->
 <div class="slide" data-sec="What is Research?">
-  <div class="tag">Overview</div>
-  <h2>The Research Process</h2>
-  <p class="sub" style="margin-bottom:10px">Research follows a recognizable, ordered structure. We are about to zoom into <span class="hg">Step 2</span> &mdash; the most underestimated step in the entire sequence.</p>
-  <div class="chain big">
-    <div class="cnode"><div class="cbox t">1. Identify Problem / Topic</div><div class="clbl">Starting point</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox g">2. Literature Review</div><div class="clbl">&larr; We go deep here</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox">3. Objectives &amp; Research Questions</div><div class="clbl">Emerges from LR</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox">4. Research Methodology</div><div class="clbl">How you&rsquo;ll study it</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox">5. Data Collection &amp; Analysis</div><div class="clbl">Primary or secondary</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox">6. Conclusions &amp; Publication</div><div class="clbl">Your contribution</div></div>
+  <div class="tag" style="font-size:24px;">Overview</div>
+  <h2 style="font-size:clamp(46px,5.5vw,68px); margin-bottom:12px;">The Research Process</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:16px;">Research follows a recognizable, ordered structure. We are about to zoom into <span class="hg">Step 2</span> — the most underestimated step in the entire sequence.</p>
+
+  <!-- Full-width flowchart -->
+  <div class="chain big" style="margin-top:20px; margin-bottom:12px; width:100%; justify-content:space-between; overflow-x:visible;">
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox t" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">1. Identify Problem / Topic</div>
+      <div class="clbl" style="font-size:16px;">Starting point</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox g" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">2. Literature Review</div>
+      <div class="clbl" style="font-size:16px;">&larr; We go deep here</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">3. Objectives &amp; Research Questions</div>
+      <div class="clbl" style="font-size:16px;">Emerges from LR</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">4. Research Methodology</div>
+      <div class="clbl" style="font-size:16px;">How you&rsquo;ll study it</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">5. Data Collection &amp; Analysis</div>
+      <div class="clbl" style="font-size:16px;">Primary or secondary</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">6. Conclusions &amp; Publication</div>
+      <div class="clbl" style="font-size:16px;">Your contribution</div>
+    </div>
   </div>
-  <div class="call g" style="margin-top:22px">
-    <p>The Literature Review (Step 2) determines whether Steps 3 through 6 are built on solid ground &mdash; or on assumptions you didn&rsquo;t know you were making. This is why it is never optional.</p>
+
+  <div class="call g" style="margin-top:20px; padding:20px 24px;">
+    <p style="font-size:24px; line-height:1.5;">The Literature Review (Step 2) determines whether Steps 3 through 6 are built on solid ground — or on assumptions you didn&rsquo;t know you were making. This is why it is never optional.</p>
   </div>
 </div>
 
@@ -490,87 +511,203 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 10. What LR IS -->
 <div class="slide larger" data-sec="Literature Review">
-  <div class="tag g">Literature Review</div>
-  <h2>What a Literature Review Actually Is</h2>
-  <div class="call g">
-    <div class="cl">Definition</div>
-    <p>A critical, <strong>synthesized</strong> analysis of existing scholarship on a topic &mdash; written to map what is known, identify what is contested, and reveal what is missing; thereby establishing the scholarly context and justification for your own research.</p>
+  <div class="tag g" style="font-size:24px;">Literature Review</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">What a Literature Review Actually Is</h2>
+  <div class="call g" style="padding:22px 26px;">
+    <div class="cl" style="font-size:20px;">Definition</div>
+    <p style="font-size:26px; line-height:1.5;">A critical, <strong>synthesized</strong> analysis of existing scholarship on a topic — written to map what is known, identify what is contested, and reveal what is missing; thereby establishing the scholarly context and justification for your own research.</p>
   </div>
-  <div class="g3" style="margin-top:18px">
-    <div class="card"><div class="lbl g">Critical</div><p>You evaluate sources &mdash; assess their methodology, strength of evidence, potential biases, and limitations. You are not just a reporter of what others said.</p></div>
-    <div class="card"><div class="lbl g">Synthesized</div><p>You connect, compare, and organize what multiple sources say around themes and arguments &mdash; not paper by paper, but by idea and pattern.</p></div>
-    <div class="card"><div class="lbl g">Purposive</div><p>Every source you select serves the purpose of building toward your gap, argument, and research objective. Inclusion is deliberate, not coincidental.</p></div>
+  <div class="g3" style="margin-top:20px; gap:20px;">
+    <div class="card" style="padding:24px 26px; min-height:280px;">
+      <div class="lbl g" style="font-size:20px;">Critical</div>
+      <p style="font-size:24px; line-height:1.5;">You evaluate sources — assess their methodology, strength of evidence, potential biases, and limitations. You are not just a reporter of what others said.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:280px;">
+      <div class="lbl g" style="font-size:20px;">Synthesized</div>
+      <p style="font-size:24px; line-height:1.5;">You connect, compare, and organize what multiple sources say around themes and arguments — not paper by paper, but by idea and pattern.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:280px;">
+      <div class="lbl g" style="font-size:20px;">Purposive</div>
+      <p style="font-size:24px; line-height:1.5;">Every source you select serves the purpose of building toward your gap, argument, and research objective. Inclusion is deliberate, not coincidental.</p>
+    </div>
   </div>
-  <div class="call" style="margin-top:16px">
-    <p>The one sentence to remember: <strong>You are not reporting what others said. You are joining a scholarly conversation &mdash; and locating where your research fits within it.</strong></p>
+  <div class="call" style="margin-top:20px; padding:20px 24px;">
+    <p style="font-size:24px; line-height:1.5;">The one sentence to remember: <strong>You are not reporting what others said. You are joining a scholarly conversation — and locating where your research fits within it.</strong></p>
   </div>
 </div>
 
 <!-- 11. Why LR - 3 Roles -->
 <div class="slide larger" data-sec="Literature Review">
-  <div class="tag g">Literature Review &mdash; Why Do It?</div>
-  <h2>Three Functional Roles of a Literature Review</h2>
-  <p class="sub" style="margin-bottom:4px">A literature review serves three distinct purposes. Think of them as three legs of a stool &mdash; without all three, the structure collapses.</p>
-  <div class="g3" style="margin-top:18px">
-    <div class="card"><div class="lbl g">Function 1</div><h4>Find the Research Gap</h4><p>Exposes where knowledge is absent, incomplete, contradictory, or contextually limited. This is what justifies the existence of your study. Without a gap, you have no rationale.</p></div>
-    <div class="card"><div class="lbl g">Function 2</div><h4>Finalize Your Topic</h4><p>You may think your topic is original. The literature review tells you whether it already has an answer, whether it needs to be narrowed, or whether your framing requires rethinking entirely.</p></div>
-    <div class="card"><div class="lbl g">Function 3</div><h4>Support Your Research Facts</h4><p>Grounds every significant claim in established scholarship. You do not build arguments from assertion &mdash; you build them from evidence that has already survived peer review.</p></div>
+  <div class="tag g" style="font-size:24px;">Literature Review — Why Do It?</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">Three Functional Roles of a Literature Review</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:12px;">A literature review serves three distinct purposes. Think of them as three legs of a stool — without all three, the structure collapses.</p>
+  <div class="g3" style="margin-top:20px; gap:20px;">
+    <div class="card" style="padding:24px 26px; min-height:320px;">
+      <div class="lbl g" style="font-size:20px;">Function 1</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Find the Research Gap</h4>
+      <p style="font-size:24px; line-height:1.5;">Exposes where knowledge is absent, incomplete, contradictory, or contextually limited. This is what justifies the existence of your study. Without a gap, you have no rationale.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:320px;">
+      <div class="lbl g" style="font-size:20px;">Function 2</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Finalize Your Topic</h4>
+      <p style="font-size:24px; line-height:1.5;">You may think your topic is original. The literature review tells you whether it already has an answer, whether it needs to be narrowed, or whether your framing requires rethinking entirely.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:320px;">
+      <div class="lbl g" style="font-size:20px;">Function 3</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Support Your Research Facts</h4>
+      <p style="font-size:24px; line-height:1.5;">Grounds every significant claim in established scholarship. You do not build arguments from assertion — you build them from evidence that has already survived peer review.</p>
+    </div>
   </div>
-  <div class="call g" style="margin-top:16px">
-    <p>A literature review that only performs one or two of these functions is incomplete. All three must be present for the review to genuinely serve your research.</p>
+  <div class="call g" style="margin-top:20px; padding:20px 24px;">
+    <p style="font-size:24px; line-height:1.5;">A literature review that only performs one or two of these functions is incomplete. All three must be present for the review to genuinely serve your research.</p>
   </div>
 </div>
 
 <!-- 12. Research Gap -->
-<div class="slide" data-sec="Literature Review">
-  <div class="tag g">Literature Review &mdash; Research Gap</div>
-  <h2>What is a Research Gap?</h2>
-  <div class="call g">
-    <div class="cl">Definition</div>
-    <p>A research gap is an <strong>absence, inconsistency, or under-examined angle within established literature</strong> &mdash; a question that existing research raises but has not adequately addressed, within a specific context, using appropriate methods, for a relevant population.</p>
+<div class="slide larger" data-sec="Literature Review">
+  <div class="tag g" style="font-size:24px;">Literature Review — Research Gap</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">What is a Research Gap?</h2>
+  <div class="call g" style="padding:20px 24px;">
+    <div class="cl" style="font-size:20px;">Definition</div>
+    <p style="font-size:26px; line-height:1.5;">A research gap is an <strong>absence, inconsistency, or under-examined angle within established literature</strong> — a question that existing research raises but has not adequately addressed, within a specific context, using appropriate methods, for a relevant population.</p>
   </div>
-  <div class="call r" style="margin-top:12px">
-    <div class="cl">Most Common Misconception</div>
-    <p>&ldquo;Nobody has studied this&rdquo; is rarely a gap &mdash; it usually means you haven&rsquo;t searched thoroughly enough. Research gaps are found <em>within</em> existing research, through the contradictions, silences, and limitations it reveals.</p>
+  <div class="call r" style="margin-top:16px; padding:20px 24px;">
+    <div class="cl" style="font-size:20px;">Most Common Misconception</div>
+    <p style="font-size:24px; line-height:1.5;">&ldquo;Nobody has studied this&rdquo; is rarely a gap — it usually means you haven&rsquo;t searched thoroughly enough. Research gaps are found <em>within</em> existing research, through the contradictions, silences, and limitations it reveals.</p>
   </div>
-  <div class="g4" style="margin-top:16px">
-    <div class="card"><div class="lbl g">Empirical Gap</div><p>Limited or insufficient data and evidence on the topic. More or better data is needed.</p></div>
-    <div class="card"><div class="lbl g">Methodological Gap</div><p>Existing studies use methods that are inadequate, biased, or too narrow for the question being asked.</p></div>
-    <div class="card"><div class="lbl g">Context / Population Gap</div><p>Studied elsewhere (e.g. Western settings) but not in your specific context, region, or population.</p></div>
-    <div class="card"><div class="lbl g">Theoretical Gap</div><p>No existing framework adequately explains an observed phenomenon &mdash; a conceptual void in the field.</p></div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:20px;">
+    <div class="card" style="padding:22px 26px; min-height:180px;">
+      <div class="lbl g" style="font-size:20px;">Empirical Gap</div>
+      <p style="font-size:22px; line-height:1.5;">Limited or insufficient data and evidence on the topic. More or better data is needed.</p>
+    </div>
+    <div class="card" style="padding:22px 26px; min-height:180px;">
+      <div class="lbl g" style="font-size:20px;">Methodological Gap</div>
+      <p style="font-size:22px; line-height:1.5;">Existing studies use methods that are inadequate, biased, or too narrow for the question being asked.</p>
+    </div>
+    <div class="card" style="padding:22px 26px; min-height:180px;">
+      <div class="lbl g" style="font-size:20px;">Context / Population Gap</div>
+      <p style="font-size:22px; line-height:1.5;">Studied elsewhere (e.g. Western settings) but not in your specific context, region, or population.</p>
+    </div>
+    <div class="card" style="padding:22px 26px; min-height:180px;">
+      <div class="lbl g" style="font-size:20px;">Theoretical Gap</div>
+      <p style="font-size:22px; line-height:1.5;">No existing framework adequately explains an observed phenomenon — a conceptual void in the field.</p>
+    </div>
   </div>
 </div>
 
 <!-- 13. Types of LR -->
-<div class="slide" data-sec="Literature Review">
-  <div class="tag g">Literature Review &mdash; Types</div>
-  <h2>Types of Literature Reviews</h2>
-  <p class="sub" style="margin-bottom:12px">Different research goals call for different types. For most UG students, the <span class="hg">narrative review</span> is the relevant starting point.</p>
-  <div class="tabhdr">
-    <button class="tbtn on" onclick="tab(this,'tn')">Narrative</button>
-    <button class="tbtn" onclick="tab(this,'ts')">Systematic</button>
-    <button class="tbtn" onclick="tab(this,'tsc')">Scoping</button>
-    <button class="tbtn" onclick="tab(this,'tm')">Meta-analysis</button>
+<div class="slide larger" data-sec="Literature Review">
+  <div class="tag g" style="font-size:24px;">Literature Review — Types</div>
+  <h2 style="font-size:clamp(42px,5vw,60px);">Types of Literature Reviews</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:14px;">Different research goals call for different types. For most UG students, the <span class="hg">narrative review</span> is the relevant starting point.</p>
+
+  <div class="tabhdr" style="margin-bottom:18px;">
+    <button class="tbtn on" onclick="tab(this,'tn')" style="font-size:22px; padding:12px 22px;">Narrative</button>
+    <button class="tbtn" onclick="tab(this,'ts')" style="font-size:22px; padding:12px 22px;">Systematic</button>
+    <button class="tbtn" onclick="tab(this,'tsc')" style="font-size:22px; padding:12px 22px;">Scoping</button>
+    <button class="tbtn" onclick="tab(this,'tm')" style="font-size:22px; padding:12px 22px;">Meta-analysis</button>
   </div>
-  <div id="tn" class="tpanel on"><div class="card"><div class="lbl g">Narrative Review &mdash; Most common at undergraduate level</div><h4>Broad, thematic synthesis without a rigid pre-specified protocol</h4><p>Organizes and synthesizes literature around themes the researcher identifies as relevant. Driven by analytical judgment, not a fixed protocol.<br><br><strong>Best for:</strong> Understanding a topic broadly, mapping arguments, identifying themes and patterns.<br><strong>Limitation:</strong> Source selection can introduce bias if not conducted thoughtfully and documented clearly.<br><br><em>This is the type most UG students will write. The standard is: thematic organization, critical analysis, and synthesis &mdash; not paper-by-paper description.</em></p></div></div>
-  <div id="ts" class="tpanel"><div class="card"><div class="lbl g">Systematic Review &mdash; Standard in evidence-based disciplines</div><h4>Rigorous, protocol-driven, transparent, and reproducible</h4><p>Follows a pre-registered, explicit protocol with defined keywords, databases, and inclusion/exclusion criteria. Results are fully reproducible by another researcher.<br><br><strong>Best for:</strong> Clinical questions, policy decisions, evidence synthesis where rigor is critical.<br><strong>Common in:</strong> Medicine, public health, psychology, evidence-based education.<br><br><em>UG students rarely conduct a full systematic review, but understanding its standards raises the bar for any LR you produce.</em></p></div></div>
-  <div id="tsc" class="tpanel"><div class="card"><div class="lbl g">Scoping Review &mdash; Mapping the landscape of a field</div><h4>Identifies range and nature of evidence without deep quality assessment</h4><p>Asks: how much research exists? What types of studies? What key concepts emerge? Maps the terrain of a field rather than synthesizing its conclusions.<br><br><strong>Best for:</strong> Emerging or complex topics where you want to establish what&rsquo;s out there before committing to a narrower focus.<br><strong>Output:</strong> A conceptual map of the field &mdash; useful as a precursor to a deeper, more targeted review.</p></div></div>
-  <div id="tm" class="tpanel"><div class="card"><div class="lbl g">Meta-analysis &mdash; Quantitative synthesis across studies</div><h4>Statistically pools data from multiple independent studies to estimate overall effect</h4><p>Requires quantitative data from multiple comparable studies. Produces a pooled effect size statistically more powerful than any single study alone.<br><br><strong>Best for:</strong> Health interventions, psychological phenomena, educational outcomes &mdash; anywhere many similar studies exist.<br><strong>Why it matters:</strong> Any single study can be an outlier. Meta-analysis finds the aggregate signal across the noise.<br><br><em>UG students encounter meta-analyses as sources &mdash; they do not typically conduct them.</em></p></div></div>
+
+  <div id="tn" class="tpanel on">
+    <div class="card" style="padding:24px 28px; min-height:420px;">
+      <div class="lbl g" style="font-size:22px;">Narrative Review — Most common at undergraduate level</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Broad, thematic synthesis without a rigid pre-specified protocol</h4>
+      <p style="font-size:22px; line-height:1.5;">Organizes and synthesizes literature around themes the researcher identifies as relevant. Driven by analytical judgment, not a fixed protocol.<br><br>
+      <strong>Best for:</strong> Understanding a topic broadly, mapping arguments, identifying themes and patterns.<br>
+      <strong>Limitation:</strong> Source selection can introduce bias if not conducted thoughtfully and documented clearly.<br><br>
+      <em>This is the type most UG students will write. The standard is: thematic organization, critical analysis, and synthesis — not paper-by-paper description.</em></p>
+    </div>
+  </div>
+
+  <div id="ts" class="tpanel">
+    <div class="card" style="padding:24px 28px; min-height:420px;">
+      <div class="lbl g" style="font-size:22px;">Systematic Review — Standard in evidence-based disciplines</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Rigorous, protocol-driven, transparent, and reproducible</h4>
+      <p style="font-size:22px; line-height:1.5;">Follows a pre-registered, explicit protocol with defined keywords, databases, and inclusion/exclusion criteria. Results are fully reproducible by another researcher.<br><br>
+      <strong>Best for:</strong> Clinical questions, policy decisions, evidence synthesis where rigor is critical.<br>
+      <strong>Common in:</strong> Medicine, public health, psychology, evidence-based education.<br><br>
+      <em>UG students rarely conduct a full systematic review, but understanding its standards raises the bar for any LR you produce.</em></p>
+    </div>
+  </div>
+
+  <div id="tsc" class="tpanel">
+    <div class="card" style="padding:24px 28px; min-height:420px;">
+      <div class="lbl g" style="font-size:22px;">Scoping Review — Mapping the landscape of a field</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Identifies range and nature of evidence without deep quality assessment</h4>
+      <p style="font-size:22px; line-height:1.5;">Asks: how much research exists? What types of studies? What key concepts emerge? Maps the terrain of a field rather than synthesizing its conclusions.<br><br>
+      <strong>Best for:</strong> Emerging or complex topics where you want to establish what&rsquo;s out there before committing to a narrower focus.<br>
+      <strong>Output:</strong> A conceptual map of the field — useful as a precursor to a deeper, more targeted review.</p>
+    </div>
+  </div>
+
+  <div id="tm" class="tpanel">
+    <div class="card" style="padding:24px 28px; min-height:420px;">
+      <div class="lbl g" style="font-size:22px;">Meta-analysis — Quantitative synthesis across studies</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Statistically pools data from multiple independent studies to estimate overall effect</h4>
+      <p style="font-size:22px; line-height:1.5;">Requires quantitative data from multiple comparable studies. Produces a pooled effect size statistically more powerful than any single study alone.<br><br>
+      <strong>Best for:</strong> Health interventions, psychological phenomena, educational outcomes — anywhere many similar studies exist.<br>
+      <strong>Why it matters:</strong> Any single study can be an outlier. Meta-analysis finds the aggregate signal across the noise.<br><br>
+      <em>UG students encounter meta-analyses as sources — they do not typically conduct them.</em></p>
+    </div>
+  </div>
 </div>
 
-<!-- 14. How to Do a LR -->
-<div class="slide" data-sec="Literature Review">
-  <div class="tag g">Literature Review &mdash; Process</div>
-  <h2>How to Conduct a Literature Review</h2>
-  <p class="sub" style="margin-bottom:6px">The process is sequential. Each step builds on the one before it. Rushing any step undermines everything downstream.</p>
-  <div class="scroll">
-    <ol class="steps">
-      <li><div class="sn">1</div><div class="sc"><strong>Define keywords and search terms</strong><span>Identify core concepts, develop synonyms, and use Boolean operators (AND, OR, NOT). A rigorous keyword strategy determines what you find &mdash; and what you miss.</span></div></li>
-      <li><div class="sn">2</div><div class="sc"><strong>Search credible academic databases</strong><span>Google Scholar, JSTOR, PubMed, Scopus, IEEE Xplore &mdash; depending on your field. Not Google. Not Wikipedia. Prioritize peer-reviewed journals and reputable conference papers.</span></div></li>
-      <li><div class="sn">3</div><div class="sc"><strong>Screen using a three-stage funnel</strong><span>Title relevance &rarr; Abstract relevance &rarr; Full text. Do not read everything in full immediately. Narrow from many results to the papers that genuinely serve your focus and scope.</span></div></li>
-      <li><div class="sn">4</div><div class="sc"><strong>Read critically, not just descriptively</strong><span>For each paper: What does it claim? What evidence? What methodology? What are its limitations? What does it leave unanswered? This analytical reading is the raw material of your review.</span></div></li>
-      <li><div class="sn">5</div><div class="sc"><strong>Organize by theme &mdash; not by paper</strong><span>Group sources by the arguments, patterns, or debates they reveal &mdash; not by author or date. This is the single most important structural choice that separates a review from a series of summaries.</span></div></li>
-      <li><div class="sn">6</div><div class="sc"><strong>Write synthesizing paragraphs that build toward the gap</strong><span>Each paragraph makes an argument about what the literature shows on a theme &mdash; and contributes to establishing why a gap exists. Every paragraph moves you closer to your research justification.</span></div></li>
+<!-- 14. How to Do a LR (split into 3 + 3 columns, larger text) -->
+<div class="slide larger" data-sec="Literature Review">
+  <div class="tag g" style="font-size:24px;">Literature Review — Process</div>
+  <h2 style="font-size:clamp(42px,5vw,60px);">How to Conduct a Literature Review</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:14px;">The process is sequential. Each step builds on the one before it. Rushing any step undermines everything downstream.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:16px;">
+    <!-- Left column: steps 1-3 -->
+    <ol class="steps" style="margin-top:0; gap:16px;">
+      <li>
+        <div class="sn" style="width:40px; height:40px; font-size:20px;">1</div>
+        <div class="sc">
+          <strong style="font-size:24px;">Define keywords and search terms</strong>
+          <span style="font-size:22px; line-height:1.5;">Identify core concepts, develop synonyms, and use Boolean operators (AND, OR, NOT). A rigorous keyword strategy determines what you find — and what you miss.</span>
+        </div>
+      </li>
+      <li>
+        <div class="sn" style="width:40px; height:40px; font-size:20px;">2</div>
+        <div class="sc">
+          <strong style="font-size:24px;">Search credible academic databases</strong>
+          <span style="font-size:22px; line-height:1.5;">Google Scholar, JSTOR, PubMed, Scopus, IEEE Xplore — depending on your field. Not Google. Not Wikipedia. Prioritize peer-reviewed journals and reputable conference papers.</span>
+        </div>
+      </li>
+      <li>
+        <div class="sn" style="width:40px; height:40px; font-size:20px;">3</div>
+        <div class="sc">
+          <strong style="font-size:24px;">Screen using a three-stage funnel</strong>
+          <span style="font-size:22px; line-height:1.5;">Title relevance → Abstract relevance → Full text. Do not read everything in full immediately. Narrow from many results to the papers that genuinely serve your focus and scope.</span>
+        </div>
+      </li>
+    </ol>
+
+    <!-- Right column: steps 4-6 -->
+    <ol class="steps" style="margin-top:0; gap:16px;">
+      <li>
+        <div class="sn" style="width:40px; height:40px; font-size:20px;">4</div>
+        <div class="sc">
+          <strong style="font-size:24px;">Read critically, not just descriptively</strong>
+          <span style="font-size:22px; line-height:1.5;">For each paper: What does it claim? What evidence? What methodology? What are its limitations? What does it leave unanswered? This analytical reading is the raw material of your review.</span>
+        </div>
+      </li>
+      <li>
+        <div class="sn" style="width:40px; height:40px; font-size:20px;">5</div>
+        <div class="sc">
+          <strong style="font-size:24px;">Organize by theme — not by paper</strong>
+          <span style="font-size:22px; line-height:1.5;">Group sources by the arguments, patterns, or debates they reveal — not by author or date. This is the single most important structural choice that separates a review from a series of summaries.</span>
+        </div>
+      </li>
+      <li>
+        <div class="sn" style="width:40px; height:40px; font-size:20px;">6</div>
+        <div class="sc">
+          <strong style="font-size:24px;">Write synthesizing paragraphs that build toward the gap</strong>
+          <span style="font-size:22px; line-height:1.5;">Each paragraph makes an argument about what the literature shows on a theme — and contributes to establishing why a gap exists. Every paragraph moves you closer to your research justification.</span>
+        </div>
+      </li>
     </ol>
   </div>
 </div>
@@ -587,39 +724,69 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 16. Research Objectives -->
 <div class="slide larger" data-sec="Research Objectives">
-  <div class="tag v">Research Objectives</div>
-  <h2>What are Research Objectives and Why Do They Matter?</h2>
-  <div class="call v">
-    <div class="cl">Definition</div>
-    <p>Research objectives are the <strong>specific, measurable, and achievable goals</strong> your research intends to accomplish &mdash; what you will do, what you will examine, and what you will be able to conclude by the end of your study.</p>
+  <div class="tag v" style="font-size:24px;">Research Objectives</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">What are Research Objectives and Why Do They Matter?</h2>
+  <div class="call v" style="padding:22px 26px;">
+    <div class="cl" style="font-size:20px;">Definition</div>
+    <p style="font-size:26px; line-height:1.5;">Research objectives are the <strong>specific, measurable, and achievable goals</strong> your research intends to accomplish — what you will do, what you will examine, and what you will be able to conclude by the end of your study.</p>
   </div>
-  <div class="g3" style="margin-top:18px">
-    <div class="card"><div class="lbl v">They emerge from the gap</div><p>Your LR identifies what is missing. Your objective says: &ldquo;This study will address that gap by doing X.&rdquo; One cannot exist without the other &mdash; objectives that don&rsquo;t stem from a gap are arbitrary.</p></div>
-    <div class="card"><div class="lbl v">They define and protect scope</div><p>Without clear objectives, research expands indefinitely. Objectives constrain your study to what is achievable &mdash; the most common UG research failure is uncontrolled scope.</p></div>
-    <div class="card"><div class="lbl v">They make evaluation possible</div><p>Without objectives, there is no criterion by which to judge whether your research succeeded. They are the standard against which findings are assessed at every stage.</p></div>
+  <div class="g3" style="margin-top:20px; gap:20px;">
+    <div class="card" style="padding:24px 26px; min-height:300px;">
+      <div class="lbl v" style="font-size:20px;">They emerge from the gap</div>
+      <p style="font-size:24px; line-height:1.5;">Your LR identifies what is missing. Your objective says: &ldquo;This study will address that gap by doing X.&rdquo; One cannot exist without the other — objectives that don&rsquo;t stem from a gap are arbitrary.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:300px;">
+      <div class="lbl v" style="font-size:20px;">They define and protect scope</div>
+      <p style="font-size:24px; line-height:1.5;">Without clear objectives, research expands indefinitely. Objectives constrain your study to what is achievable — the most common UG research failure is uncontrolled scope.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:300px;">
+      <div class="lbl v" style="font-size:20px;">They make evaluation possible</div>
+      <p style="font-size:24px; line-height:1.5;">Without objectives, there is no criterion by which to judge whether your research succeeded. They are the standard against which findings are assessed at every stage.</p>
+    </div>
   </div>
 </div>
 
 <!-- 17. Research Chain -->
 <div class="slide" data-sec="Research Objectives">
-  <div class="tag v">The Logical Spine</div>
-  <h2>The Research Chain</h2>
-  <p class="sub" style="margin-bottom:6px">Every well-structured research project follows this causal sequence. Each step earns the right to the next. Skipping or rushing the literature review creates structural problems in everything that follows.</p>
-  <div class="chain big" style="margin-top:26px">
-    <div class="cnode"><div class="cbox g">Literature Review</div><div class="clbl">Maps existing knowledge</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox g">Research Gap</div><div class="clbl">Identifies what is missing</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox v">Research Objective</div><div class="clbl">Defines what you will do</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox v">Research Question</div><div class="clbl">What you are specifically asking</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox t">Methodology</div><div class="clbl">How you will answer it</div></div>
-    <div class="carr">&rarr;</div>
-    <div class="cnode"><div class="cbox t">Data &amp; Analysis</div><div class="clbl">What you find</div></div>
+  <div class="tag v" style="font-size:24px;">The Logical Spine</div>
+  <h2 style="font-size:clamp(46px,5.5vw,68px); margin-bottom:12px;">The Research Chain</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:16px;">Every well-structured research project follows this causal sequence. Each step earns the right to the next. Skipping or rushing the literature review creates structural problems in everything that follows.</p>
+
+  <!-- Full-width flowchart -->
+  <div class="chain big" style="margin-top:20px; margin-bottom:12px; width:100%; justify-content:space-between; overflow-x:visible;">
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox g" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">Literature Review</div>
+      <div class="clbl" style="font-size:16px;">Maps existing knowledge</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox g" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">Research Gap</div>
+      <div class="clbl" style="font-size:16px;">Identifies what is missing</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox v" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">Research Objective</div>
+      <div class="clbl" style="font-size:16px;">Defines what you will do</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox v" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">Research Question</div>
+      <div class="clbl" style="font-size:16px;">What you are specifically asking</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox t" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">Methodology</div>
+      <div class="clbl" style="font-size:16px;">How you will answer it</div>
+    </div>
+    <div class="carr" style="flex-shrink:0;">&rarr;</div>
+    <div class="cnode" style="flex:1; min-width:0;">
+      <div class="cbox t" style="min-width:0; max-width:100%; padding:16px 12px; font-size:22px;">Data &amp; Analysis</div>
+      <div class="clbl" style="font-size:16px;">What you find</div>
+    </div>
   </div>
-  <div class="call v" style="margin-top:24px">
-    <p>A research objective that doesn&rsquo;t trace back to a clearly identified gap is an assertion, not a justified scholarly aim. The chain must hold &mdash; from end to end.</p>
+
+  <div class="call v" style="margin-top:20px; padding:20px 24px;">
+    <p style="font-size:24px; line-height:1.5;">A research objective that doesn&rsquo;t trace back to a clearly identified gap is an assertion, not a justified scholarly aim. The chain must hold — from end to end.</p>
   </div>
 </div>
 
@@ -651,34 +818,57 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 20. What is a Citation -->
 <div class="slide larger" data-sec="Ethics &amp; Citations">
-  <div class="tag r">Citations</div>
-  <h2>What is a Citation and Why Does it Matter?</h2>
-  <div class="call r">
-    <div class="cl">Definition</div>
-    <p>A citation is a formal acknowledgment of the source of an idea, claim, quotation, or data used in your research. It tells the reader exactly where the information came from &mdash; and enables them to locate, verify, and build on it.</p>
+  <div class="tag r" style="font-size:24px;">Citations</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">What is a Citation and Why Does it Matter?</h2>
+  <div class="call r" style="padding:22px 26px;">
+    <div class="cl" style="font-size:20px;">Definition</div>
+    <p style="font-size:26px;line-height:1.5;">A citation is a formal acknowledgment of the source of an idea, claim, quotation, or data used in your research. It tells the reader exactly where the information came from — and enables them to locate, verify, and build on it.</p>
   </div>
-  <div class="g3" style="margin-top:18px">
-    <div class="card"><div class="lbl r">Attribution</div><p>Scholarly knowledge is cumulative. Every idea you use was built by someone before you. Citation acknowledges that intellectual debt and credits those who did the work.</p></div>
-    <div class="card"><div class="lbl r">Reproducibility</div><p>Any reader can follow your citations to verify your sources, test your claims, or continue research from the same foundation. Without citations, none of this is possible.</p></div>
-    <div class="card"><div class="lbl r">Credibility</div><p>Well-cited research demonstrates that your arguments are grounded in verified scholarship &mdash; not personal opinion, hearsay, or unverifiable assertion.</p></div>
+  <div class="g3" style="margin-top:20px; gap:20px;">
+    <div class="card" style="padding:24px 26px; min-height:280px;">
+      <div class="lbl r" style="font-size:20px;">Attribution</div>
+      <p style="font-size:24px;line-height:1.5;">Scholarly knowledge is cumulative. Every idea you use was built by someone before you. Citation acknowledges that intellectual debt and credits those who did the work.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:280px;">
+      <div class="lbl r" style="font-size:20px;">Reproducibility</div>
+      <p style="font-size:24px;line-height:1.5;">Any reader can follow your citations to verify your sources, test your claims, or continue research from the same foundation. Without citations, none of this is possible.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:280px;">
+      <div class="lbl r" style="font-size:20px;">Credibility</div>
+      <p style="font-size:24px;line-height:1.5;">Well-cited research demonstrates that your arguments are grounded in verified scholarship — not personal opinion, hearsay, or unverifiable assertion.</p>
+    </div>
   </div>
-  <div class="call" style="margin-top:16px">
-    <p><strong>Working rule:</strong> Any claim in your research that did not come from your own original data or analysis requires a citation. No claim without a source.</p>
+  <div class="call" style="margin-top:20px; padding:18px 22px;">
+    <p style="font-size:24px;line-height:1.5;"><strong>Working rule:</strong> Any claim in your research that did not come from your own original data or analysis requires a citation. No claim without a source.</p>
   </div>
 </div>
 
 <!-- 21. Citation / Para / Plagiarism -->
 <div class="slide larger" data-sec="Ethics &amp; Citations">
-  <div class="tag r">The Critical Distinction</div>
-  <h2>Citation, Paraphrasing &amp; Plagiarism</h2>
-  <div class="three">
-    <div class="card"><div class="lbl">Direct Citation</div><h4>Exact text, properly attributed</h4><p>Quoting an author&rsquo;s exact words, in quotation marks, with a full in-text citation. Use sparingly &mdash; only when precise wording is analytically significant and cannot be paraphrased without losing meaning.</p></div>
-    <div class="card"><div class="lbl g">Paraphrasing</div><h4>Rewritten &mdash; still requires attribution</h4><p>Restating someone else&rsquo;s idea in your own words. Paraphrasing is the preferred mode in academic writing. However &mdash; <strong>paraphrasing still requires a citation.</strong> Rewriting does not make the idea yours.</p></div>
-    <div class="card"><div class="lbl r">Plagiarism</div><h4>Any idea used without attribution</h4><p>Using someone else&rsquo;s idea, text, data, or structure without acknowledging the source. Defined by <strong>attribution failure</strong>, not surface-level copying. Paraphrasing without a citation is plagiarism.</p></div>
+  <div class="tag r" style="font-size:24px;">The Critical Distinction</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">Citation, Paraphrasing &amp; Plagiarism</h2>
+
+  <div class="three" style="gap:20px; margin-top:20px;">
+    <div class="card" style="padding:24px 26px; min-height:300px;">
+      <div class="lbl" style="font-size:20px;">Direct Citation</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Exact text, properly attributed</h4>
+      <p style="font-size:24px; line-height:1.5;">Quoting an author&rsquo;s exact words, in quotation marks, with a full in-text citation. Use sparingly — only when precise wording is analytically significant and cannot be paraphrased without losing meaning.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:300px;">
+      <div class="lbl g" style="font-size:20px;">Paraphrasing</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Rewritten — still requires attribution</h4>
+      <p style="font-size:24px; line-height:1.5;">Restating someone else&rsquo;s idea in your own words. Paraphrasing is the preferred mode in academic writing. However — <strong>paraphrasing still requires a citation.</strong> Rewriting does not make the idea yours.</p>
+    </div>
+    <div class="card" style="padding:24px 26px; min-height:300px;">
+      <div class="lbl r" style="font-size:20px;">Plagiarism</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Any idea used without attribution</h4>
+      <p style="font-size:24px; line-height:1.5;">Using someone else&rsquo;s idea, text, data, or structure without acknowledging the source. Defined by <strong>attribution failure</strong>, not surface-level copying. Paraphrasing without a citation is plagiarism.</p>
+    </div>
   </div>
-  <div class="call r" style="margin-top:16px">
-    <div class="cl">The Most Common Misconception</div>
-    <p>&ldquo;I changed the words, so it&rsquo;s not plagiarism.&rdquo; &mdash; Incorrect. If you took the idea from a source and did not cite that source, it is plagiarism regardless of how thoroughly you rewrote the sentence.</p>
+
+  <div class="call r" style="margin-top:20px; padding:20px 24px;">
+    <div class="cl" style="font-size:20px;">The Most Common Misconception</div>
+    <p style="font-size:24px; line-height:1.5;">&ldquo;I changed the words, so it&rsquo;s not plagiarism.&rdquo; — Incorrect. If you took the idea from a source and did not cite that source, it is plagiarism regardless of how thoroughly you rewrote the sentence.</p>
   </div>
 </div>
 
@@ -1039,36 +1229,40 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 34. Descriptive Stats — Dispersion + Presentation -->
 <div class="slide larger" data-sec="Introduction to Statistics">
-  <div class="tag b">Descriptive Statistics</div>
-  <h2>Measures of Dispersion &amp; Data Presentation</h2>
-  <p class="sub" style="margin-bottom:12px">Central tendency alone is incomplete. Dispersion tells us <span class="hb">how widely spread</span> the observations are around that center.</p>
-  <div class="g2">
-    <div>
-      <div class="card">
-        <div class="lbl b">Measures of Dispersion</div>
-        <p style="margin-bottom:8px">Range &bull; Variance &bull; Standard Deviation &bull; Interquartile Range &bull; Coefficient of Variation</p>
+  <div class="tag b" style="font-size:24px;">Descriptive Statistics</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">Measures of Dispersion &amp; Data Presentation</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:16px;">Central tendency alone is incomplete. Dispersion tells us <span class="hb">how widely spread</span> the observations are around that center.</p>
+
+  <div class="g2" style="gap:24px;">
+    <!-- Left column -->
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div class="card" style="padding:24px 26px;">
+        <div class="lbl b" style="font-size:20px;">Measures of Dispersion</div>
+        <p style="font-size:22px; line-height:1.5; margin-bottom:0;">Range &bull; Variance &bull; Standard Deviation &bull; Interquartile Range &bull; Coefficient of Variation</p>
       </div>
-      <div class="call b" style="margin-top:12px">
-        <div class="cl">Why Dispersion Matters</div>
-        <p style="font-size:14px"><strong>Both classes have a mean of 60:</strong><br><br>
+      <div class="call b" style="padding:20px 24px; flex:1;">
+        <div class="cl" style="font-size:18px;">Why Dispersion Matters</div>
+        <p style="font-size:22px; line-height:1.4;"><strong>Both classes have a mean of 60:</strong><br><br>
         Class A: 58, 59, 60, 61, 62 &mdash; <span class="hgr">low variability</span><br>
         Class B: 30, 45, 60, 75, 90 &mdash; <span class="hr">high variability</span><br><br>
         Same mean, very different distributions. <strong>Mean alone does not give the complete picture.</strong> Dispersion completes it.</p>
       </div>
     </div>
-    <div class="card">
-      <div class="lbl b">Presentation of Data</div>
-      <h4>Making data visible and communicable</h4>
-      <p>Descriptive statistics also encompasses the visual communication of data:</p>
-      <ul style="margin-top:10px;list-style:none;display:flex;flex-direction:column;gap:8px">
-        <li style="font-size:14px;color:var(--muted)">&#9632;&nbsp; Frequency tables</li>
-        <li style="font-size:14px;color:var(--muted)">&#9632;&nbsp; Bar charts</li>
-        <li style="font-size:14px;color:var(--muted)">&#9632;&nbsp; Pie charts</li>
-        <li style="font-size:14px;color:var(--muted)">&#9632;&nbsp; Histograms</li>
-        <li style="font-size:14px;color:var(--muted)">&#9632;&nbsp; Line graphs</li>
+
+    <!-- Right column -->
+    <div class="card" style="padding:24px 26px;">
+      <div class="lbl b" style="font-size:20px;">Presentation of Data</div>
+      <h4 style="font-size:26px; margin-bottom:10px;">Making data visible and communicable</h4>
+      <p style="font-size:22px; line-height:1.5;">Descriptive statistics also encompasses the visual communication of data:</p>
+      <ul style="margin-top:12px; list-style:none; display:flex; flex-direction:column; gap:10px;">
+        <li style="font-size:22px; color:var(--muted);">&#9632;&nbsp; Frequency tables</li>
+        <li style="font-size:22px; color:var(--muted);">&#9632;&nbsp; Bar charts</li>
+        <li style="font-size:22px; color:var(--muted);">&#9632;&nbsp; Pie charts</li>
+        <li style="font-size:22px; color:var(--muted);">&#9632;&nbsp; Histograms</li>
+        <li style="font-size:22px; color:var(--muted);">&#9632;&nbsp; Line graphs</li>
       </ul>
-      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
-        <p style="font-size:13.5px;color:var(--muted)"><span class="hb">Descriptive statistics</span> describes the data we have.<br><span class="ht">Inferential statistics</span> helps us draw conclusions beyond it.</p>
+      <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+        <p style="font-size:22px; color:var(--muted); line-height:1.5;"><span class="hb">Descriptive statistics</span> describes the data we have.<br><span class="ht">Inferential statistics</span> helps us draw conclusions beyond it.</p>
       </div>
     </div>
   </div>
@@ -1112,21 +1306,60 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 
 <!-- 36. Sampling Methods -->
-<div class="slide" data-sec="Introduction to Statistics">
-  <div class="tag b">Sampling Methods</div>
-  <h2>Probability Sampling Methods</h2>
-  <p class="sub" style="margin-bottom:14px">In <span class="hb">probability sampling</span>, every unit in the population has a known, non-zero probability of being selected &mdash; which makes the sample statistically defensible and generalizable.</p>
-  <div class="tabhdr">
-    <button class="tbtn b on" onclick="tab(this,'s1')">Simple Random</button>
-    <button class="tbtn b" onclick="tab(this,'s2')">Systematic</button>
-    <button class="tbtn b" onclick="tab(this,'s3')">Stratified</button>
-    <button class="tbtn b" onclick="tab(this,'s4')">Cluster</button>
+<div class="slide larger" data-sec="Introduction to Statistics">
+  <div class="tag b" style="font-size:24px;">Sampling Methods</div>
+  <h2 style="font-size:clamp(42px,5vw,60px);">Probability Sampling Methods</h2>
+  <p class="sub" style="font-size:24px; margin-bottom:14px;">In <span class="hb">probability sampling</span>, every unit in the population has a known, non-zero probability of being selected — which makes the sample statistically defensible and generalizable.</p>
+
+  <div class="tabhdr" style="margin-bottom:16px;">
+    <button class="tbtn b on" onclick="tab(this,'s1')" style="font-size:22px; padding:12px 22px;">Simple Random</button>
+    <button class="tbtn b" onclick="tab(this,'s2')" style="font-size:22px; padding:12px 22px;">Systematic</button>
+    <button class="tbtn b" onclick="tab(this,'s3')" style="font-size:22px; padding:12px 22px;">Stratified</button>
+    <button class="tbtn b" onclick="tab(this,'s4')" style="font-size:22px; padding:12px 22px;">Cluster</button>
   </div>
-  <div id="s1" class="tpanel on"><div class="card"><div class="lbl b">Simple Random Sampling</div><h4>Every member has an equal, independent chance of selection</h4><p>Each population unit has the same probability of being chosen. Selection is free of any pattern or preference &mdash; purely random.<br><br><strong>How:</strong> Use a random number generator, lottery method, or random number tables.<br><br><strong>Example:</strong> A college has 1,000 students. The researcher randomly selects 100 using a random-number generator &mdash; every student had an equal 1-in-10 chance of selection.<br><br><strong>Best for:</strong> Homogeneous populations where no specific sub-groups need to be represented separately.</p></div></div>
-  <div id="s2" class="tpanel"><div class="card"><div class="lbl b">Systematic Sampling</div><h4>Every k<sup>th</sup> member selected after a random starting point</h4><p>The researcher determines a sampling interval (k = population size &divide; required sample size), chooses a random starting point, then selects every k<sup>th</sup> unit thereafter.<br><br><strong>Example:</strong> Population = 1,000 students. Required sample = 100. Sampling interval k = 1,000 &divide; 100 = 10. After a random start, every 10th student is selected.<br><br><strong>Best for:</strong> Populations with a natural ordering (lists, registers, databases). Faster to execute than simple random sampling.</p></div></div>
-  <div id="s3" class="tpanel"><div class="card"><div class="lbl b">Stratified Sampling</div><h4>Population divided into homogeneous strata; sample drawn from each</h4><p>The population is divided into relatively homogeneous groups called <em>strata</em> based on a relevant characteristic, and samples are then drawn from each stratum.<br><br><strong>Example:</strong> Students are divided by year of study &mdash; First Year, Second Year, Third Year. Students are then selected proportionally from each group.<br><br><strong>Best for:</strong> Heterogeneous populations where important sub-groups must be represented. Produces more precise estimates than simple random sampling when strata differ from each other.</p></div></div>
-  <div id="s4" class="tpanel"><div class="card"><div class="lbl b">Cluster Sampling</div><h4>Natural groups (clusters) identified; some clusters selected; all members within studied</h4><p>The population is divided into natural groups called <em>clusters</em>. Some clusters are randomly selected, and all or most members within those clusters are studied.<br><br><strong>Example:</strong> To study college students across a city, 10 colleges are randomly selected. All students within those colleges are surveyed. The colleges are the clusters.<br><br><strong>Best for:</strong> Geographically dispersed populations where it is impractical to travel to each individual member. More economical than other methods at scale.</p></div></div>
+
+  <div id="s1" class="tpanel on">
+    <div class="card" style="padding:24px 28px; min-height:340px;">
+      <div class="lbl b" style="font-size:22px;">Simple Random Sampling</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Every member has an equal, independent chance of selection</h4>
+      <p style="font-size:22px; line-height:1.5;">Each population unit has the same probability of being chosen. Selection is free of any pattern or preference — purely random.<br><br>
+      <strong>How:</strong> Use a random number generator, lottery method, or random number tables.<br><br>
+      <strong>Example:</strong> A college has 1,000 students. The researcher randomly selects 100 using a random-number generator — every student had an equal 1-in-10 chance of selection.<br><br>
+      <strong>Best for:</strong> Homogeneous populations where no specific sub-groups need to be represented separately.</p>
+    </div>
+  </div>
+
+  <div id="s2" class="tpanel">
+    <div class="card" style="padding:24px 28px; min-height:340px;">
+      <div class="lbl b" style="font-size:22px;">Systematic Sampling</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Every k<sup>th</sup> member selected after a random starting point</h4>
+      <p style="font-size:22px; line-height:1.5;">The researcher determines a sampling interval (k = population size ÷ required sample size), chooses a random starting point, then selects every k<sup>th</sup> unit thereafter.<br><br>
+      <strong>Example:</strong> Population = 1,000 students. Required sample = 100. Sampling interval k = 1,000 ÷ 100 = 10. After a random start, every 10th student is selected.<br><br>
+      <strong>Best for:</strong> Populations with a natural ordering (lists, registers, databases). Faster to execute than simple random sampling.</p>
+    </div>
+  </div>
+
+  <div id="s3" class="tpanel">
+    <div class="card" style="padding:24px 28px; min-height:340px;">
+      <div class="lbl b" style="font-size:22px;">Stratified Sampling</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Population divided into homogeneous strata; sample drawn from each</h4>
+      <p style="font-size:22px; line-height:1.5;">The population is divided into relatively homogeneous groups called <em>strata</em> based on a relevant characteristic, and samples are then drawn from each stratum.<br><br>
+      <strong>Example:</strong> Students are divided by year of study — First Year, Second Year, Third Year. Students are then selected proportionally from each group.<br><br>
+      <strong>Best for:</strong> Heterogeneous populations where important sub-groups must be represented. Produces more precise estimates than simple random sampling when strata differ from each other.</p>
+    </div>
+  </div>
+
+  <div id="s4" class="tpanel">
+    <div class="card" style="padding:24px 28px; min-height:340px;">
+      <div class="lbl b" style="font-size:22px;">Cluster Sampling</div>
+      <h4 style="font-size:28px; margin-bottom:10px;">Natural groups (clusters) identified; some clusters selected; all members within studied</h4>
+      <p style="font-size:22px; line-height:1.5;">The population is divided into natural groups called <em>clusters</em>. Some clusters are randomly selected, and all or most members within those clusters are studied.<br><br>
+      <strong>Example:</strong> To study college students across a city, 10 colleges are randomly selected. All students within those colleges are surveyed. The colleges are the clusters.<br><br>
+      <strong>Best for:</strong> Geographically dispersed populations where it is impractical to travel to each individual member. More economical than other methods at scale.</p>
+    </div>
+  </div>
 </div>
+
 
 <!-- 37. Hypothesis Testing — Concept -->
 <div class="slide" data-sec="Introduction to Statistics">
@@ -1158,29 +1391,44 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
 
 <!-- 38. Hypothesis Testing — Decision Framework -->
 <div class="slide larger" data-sec="Introduction to Statistics">
-  <div class="tag b">Hypothesis Testing</div>
-  <h2>Level of Significance &amp; The Decision Rule</h2>
-  <div class="g2">
-    <div>
-      <div class="call b">
-        <div class="cl">Level of Significance &mdash; &#945;</div>
-        <p>The most commonly used significance level is <strong>&#945; = 0.05</strong>. This represents the <strong>maximum acceptable probability of incorrectly rejecting a true null hypothesis</strong> (Type I error &mdash; a false positive). The researcher sets this before conducting the test.</p>
+  <div class="tag b" style="font-size:24px;">Hypothesis Testing</div>
+  <h2 style="font-size:clamp(44px,5vw,62px);">Level of Significance &amp; The Decision Rule</h2>
+
+  <div class="g2" style="gap:24px;">
+    <!-- Left column -->
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div class="call b" style="padding:22px 26px;">
+        <div class="cl" style="font-size:20px;">Level of Significance — &#945;</div>
+        <p style="font-size:26px;line-height:1.5;">The most commonly used significance level is <strong>&#945; = 0.05</strong>. This represents the <strong>maximum acceptable probability of incorrectly rejecting a true null hypothesis</strong> (Type I error — a false positive). The researcher sets this before conducting the test.</p>
       </div>
-      <div class="call" style="margin-top:12px">
-        <p style="font-size:14px">After setting &#945;, a test statistic is calculated from sample data (e.g. t-test, z-test, chi-square &mdash; depending on the question and data type). The resulting <strong>p-value</strong> is then compared to &#945; to reach a decision.</p>
+      <div class="call" style="padding:20px 24px;">
+        <p style="font-size:24px;line-height:1.5;">After setting &#945;, a test statistic is calculated from sample data (e.g., t-test, z-test, chi-square — depending on the question and data type). The resulting <strong>p-value</strong> is then compared to &#945; to reach a decision.</p>
       </div>
     </div>
-    <div>
-      <p style="font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.05em;margin-bottom:10px;text-transform:uppercase">Decision Rule</p>
-      <table class="dec">
-        <thead><tr><th>Condition</th><th>Decision</th></tr></thead>
+
+    <!-- Right column -->
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <p style="font-size:22px;font-weight:600;color:var(--muted);letter-spacing:.05em;margin-bottom:0;text-transform:uppercase;">Decision Rule</p>
+      <table class="dec" style="font-size:24px;">
+        <thead>
+          <tr>
+            <th style="padding:14px 18px;font-size:20px;">Condition</th>
+            <th style="padding:14px 18px;font-size:20px;">Decision</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>p &gt; 0.05</td><td class="ac">Do not reject H&#8320; &mdash; insufficient evidence to overturn the claim</td></tr>
-          <tr><td>p &lt; 0.05</td><td class="no">Reject H&#8320; &mdash; sample evidence is strong enough to contradict the claim</td></tr>
+          <tr>
+            <td style="padding:16px 18px;font-size:24px;">p &gt; 0.05</td>
+            <td class="ac" style="padding:16px 18px;font-size:24px;">Do not reject H&#8320; — insufficient evidence to overturn the claim</td>
+          </tr>
+          <tr>
+            <td style="padding:16px 18px;font-size:24px;">p &lt; 0.05</td>
+            <td class="no" style="padding:16px 18px;font-size:24px;">Reject H&#8320; — sample evidence is strong enough to contradict the claim</td>
+          </tr>
         </tbody>
       </table>
-      <div class="call b" style="margin-top:12px">
-        <p style="font-size:13.5px"><strong>Example:</strong> H&#8320;: &#956; = 60 &nbsp;&bull;&nbsp; H&#8321;: &#956; &ne; 60<br>Run test &rarr; get p-value &rarr; if p &lt; 0.05, reject H&#8320; &mdash; evidence suggests the average marks differ significantly from 60.</p>
+      <div class="call b" style="padding:20px 24px;">
+        <p style="font-size:24px;line-height:1.5;"><strong>Example:</strong> H&#8320;: &#956; = 60 &nbsp;&bull;&nbsp; H&#8321;: &#956; &ne; 60<br>Run test &rarr; get p-value &rarr; if p &lt; 0.05, reject H&#8320; — evidence suggests the average marks differ significantly from 60.</p>
       </div>
     </div>
   </div>
@@ -1334,6 +1582,8 @@ body.light #deck table.cmp tr:hover td{background:rgba(0,0,0,.025)}
     themetog.innerHTML = light ? '&#9790;' : '&#9728;';
   }
   window.toggleTheme = toggleTheme;
+  // Set initial icon based on current body class
+  themetog.innerHTML = document.body.classList.contains('light') ? '&#9790;' : '&#9728;';
 
   document.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', e => e.stopPropagation());
